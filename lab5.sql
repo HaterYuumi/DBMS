@@ -106,6 +106,17 @@
 -- в Великобритании (country_id = 'UK') 
 -- и у которых есть дети
 
+-- SELECT e.first_name || ' ' || e.last_name AS employee_name,
+-- j.job_title, d.department_name
+-- FROM employees e, departments d, locations l, jobs j, dependents dep
+-- WHERE e.department_id = d.department_id    
+-- AND d.location_id = l.location_id          
+-- AND e.job_id = j.job_id                    
+-- AND e.employee_id = dep.employee_id        
+-- AND UPPER(d.department_name) LIKE '%SALES%' 
+-- AND l.country_id = 'UK'                    
+-- AND dep.relationship = 'Child';
+
 -- 12 -- 
 
 -- Проанализировать эффективность локаций для отделов. Мы хотим увидеть 
